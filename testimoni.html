@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Testimonial</title>
+    <link rel="stylesheet" href="assets/css/navbar.css">
+    <link rel="stylesheet" href="assets/css/responsiveNabar.css">
+    <link rel="stylesheet" href="assets/css/testimonial.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+        <!-- navbar -->
+        <div class="navbar">
+            <img src="assets/image/image.png" alt="logo-dumbways" />
+            <div class="itemNavbar">
+              <ul>
+                <li><a href="index.html" class="home">Home</a></li>
+                <li><a href="myProject.html">My Project</a></li>
+                <li><a href="testimoni.html">Testimoni</a></li>
+              </ul>
+              <a href="contactMe.html"
+                ><button class="contactMe-button">contact me</button></a
+              >
+            </div>
+            <button class="iconToggle" onclick="toggle()">
+              <i class="fa-solid fa-bars"></i>
+            </button>
+          </div>
+      
+          <div class="itemNavbar2 navHide" id="itemNavbar">
+            <ul>
+              <li><a href="index.html" class="home">Home</a></li>
+              <li><a href="myProject.html">My Project</a></li>
+              <li><a href="testimoni.html">Testimoni</a></li>
+              <li>
+                <a href="contactMe.html"
+                  ><button class="contactMe-button">contact me</button></a
+                >
+              </li>
+            </ul>
+          </div>
+
+    <div class="container">
+      <h1>My Testimonials</h1>
+      <div class="rating">
+        <button onclick="renderAllData()" class="rating-btn">All</button>
+        <button onclick="renderFilteredData(1)" class="rating-btn">
+          1 <i class="fa-solid fa-star"></i>
+        </button>
+        <button onclick="renderFilteredData(2)" class="rating-btn">
+          2 <i class="fa-solid fa-star"></i>
+        </button>
+        <button onclick="renderFilteredData(3)" class="rating-btn">
+          3 <i class="fa-solid fa-star"></i>
+        </button>
+        <button onclick="renderFilteredData(4)" class="rating-btn">
+          4 <i class="fa-solid fa-star"></i>
+        </button>
+        <button onclick="renderFilteredData(5)" class="rating-btn">
+          5 <i class="fa-solid fa-star"></i>
+        </button>
+      </div>
+
+      <section class="testimonials" id="testimonials"></section>
+    </div>
+    <script src="assets/js/testimonialAsync.js"></script>
+    <script src="assets/js/navbar.js"></script>
+  </body>
+</html>
